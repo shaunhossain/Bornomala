@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.shaunhossain.bornomala.MainFragment"
+        android:label="বর্ণমালা"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_writeFragment"
+            app:destination="@id/writeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_alphabatSelectionFragment"
+            app:destination="@id/alphabatSelectionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_namotaListFragment"
+            app:destination="@id/namotaListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_kobitaListFragment"
+            app:destination="@id/kobitaListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alphabatSelectionFragment"
+        android:name="com.shaunhossain.bornomala.AlphabatSelectionFragment"
+        android:label="বাংলা বর্ণমালা সমূহ"
+        tools:layout="@layout/alphabat_selection_fragment" >
+        <action
+            android:id="@+id/action_alphabatSelectionFragment_to_sorbornoFragment"
+            app:destination="@id/sorbornoFragment" />
+        <action
+            android:id="@+id/action_alphabatSelectionFragment_to_banjonbornoFragment"
+            app:destination="@id/banjonbornoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.shaunhossain.bornomala.NumberFragment"
+        android:label="সংখ্যা"
+        tools:layout="@layout/number_fragment" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.shaunhossain.bornomala.GameFragment"
+        android:label="খেলাধুলা"
+        tools:layout="@layout/game_fragment" />
+    <fragment
+        android:id="@+id/writeFragment"
+        android:name="com.shaunhossain.bornomala.WriteFragment"
+        android:label="বর্ণ লিখন"
+        tools:layout="@layout/write_fragment" />
+    <fragment
+        android:id="@+id/banjonbornoFragment"
+        android:name="com.shaunhossain.bornomala.BanjonbornoFragment"
+        android:label="ব্যঞ্জনবর্ণ"
+        tools:layout="@layout/banjonborno_fragment" />
+    <fragment
+        android:id="@+id/sorbornoFragment"
+        android:name="com.shaunhossain.bornomala.SorbornoFragment"
+        android:label="স্বরবর্ণ"
+        tools:layout="@layout/sorborno_fragment" />
+    <fragment
+        android:id="@+id/kobitaListFragment"
+        android:name="com.shaunhossain.bornomala.KobitaListFragment"
+        android:label="ছড়ার সংকলন"
+        tools:layout="@layout/kobita_list_fragment" >
+        <action
+            android:id="@+id/action_kobitaListFragment_to_kobitaFragment"
+            app:destination="@id/kobitaFragment" />
+        <argument
+            android:name="kobita_transfer"
+            app:argType="com.shaunhossain.bornomala.Data.DataOfKobita" />
+    </fragment>
+    <fragment
+        android:id="@+id/namotaListFragment"
+        android:name="com.shaunhossain.bornomala.NamotaListFragment"
+        android:label="সংখ্যা সমূহ"
+        tools:layout="@layout/namota_list_fragment" />
+    <fragment
+        android:id="@+id/kobitaFragment"
+        android:name="com.shaunhossain.bornomala.KobitaFragment"
+        android:label="ছড়া"
+        tools:layout="@layout/fragment_kobita" />
+</navigation>

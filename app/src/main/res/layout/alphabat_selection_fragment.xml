@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AlphabatSelectionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aphabate_fragment_background">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sorborno"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:innerRadius="0dp"
+            android:shape="oval"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/previous"
+            app:layout_constraintEnd_toStartOf="@+id/benjonborno"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/sorborno_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_red"
+                app:srcCompat="@drawable/shoroborno" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/benjonborno"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:innerRadius="0dp"
+            android:shape="oval"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/previous"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sorborno"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/benjonborno_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGamePrimaryDark"
+                app:srcCompat="@drawable/benjonborno" />
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sorborno"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/elephant_jumping" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

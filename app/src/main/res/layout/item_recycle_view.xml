@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:id="@+id/layout_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/kobita_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/amader_sotonodi"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_alignRight="@id/kobita_image_view"
+                android:layout_alignBottom="@+id/kobita_image_view">
+                <TextView
+                    android:id="@+id/kobita_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amader soto nodi"
+                    android:textColor="@color/colorGamePrimaryDark"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/kobi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_pink"
+                    android:text="Kobi name"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

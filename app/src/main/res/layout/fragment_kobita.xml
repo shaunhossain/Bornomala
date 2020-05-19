@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/kobita_fragment_background2"
+    tools:context=".KobitaFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_base"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:innerRadius="0dp"
+            android:shape="oval"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/kobita_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/amader_sotonodi"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_alignRight="@id/kobita_image_view"
+            android:layout_alignBottom="@+id/kobita_image_view">
+            <TextView
+                android:id="@+id/kobita_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amader_sotonodi"
+                android:textColor="@color/colorGamePrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/kobi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_pink"
+                android:text="@string/robithakur"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/kobita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/amder_sotonodi_kobita"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitCenter"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/elephant_jumping" />
+
+    </LinearLayout>
+
+</FrameLayout>

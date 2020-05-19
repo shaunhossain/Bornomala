@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bornomala</string>
+    <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="আতা_গাছে_তোতা_পাখি">আতা গাছে তোতা পাখি</string>
+    <string name="amader_sotonodi">আমাদের ছোট নদী</string>
+    <string name="robithakur">রবীন্দ্রনাথ ঠাকুর</string>
+    <string name="amder_sotonodi_kobita">আমাদের ছোটো নদী চলে বাঁকে বাঁকে \n বৈশাখ মাসে তার হাঁটু জল থাকে। \n পার হয়ে যায় গোরু, পার হয় গাড়ি, \n দুই ধার উঁচু তার, ঢালু তার পাড়ি। \n\n চিক্ চিক্ করে বালি, কোথা নাই কাদা, \n একধারে কাশবন ফুলে ফুলে সাদা। \n কিচিমিচি করে সেথা শালিকের ঝাঁক, \n রাতে ওঠে থেকে থেকে শেয়ালের হাঁক।
+</string>
+</resources>
