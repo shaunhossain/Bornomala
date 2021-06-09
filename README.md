@@ -20,7 +20,7 @@ navigation between fragments
 * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel/) - Manage UI related data in a lifecycle conscious way and act as a channel between use cases and ui
 * [ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2) - to manage multiple fragments for categores 
 
-## App [Link](https://github.com/shaunhossain/Eud-Bangla/releases/download/v0.3-alpha.2/EduBangla.apk)
+## App [Link](https://github.com/shaunhossain/Bornomala/releases/download/v1.0/Bornomala.apk)
 
 
 ## Screenshots
