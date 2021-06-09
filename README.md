@@ -27,5 +27,5 @@ navigation between fragments
 |<img src="screenshots/home_screen.jpg" width=200/>|<img src="screenshots/select_alphabet_screen.jpg" width=200/>|<img src="screenshots/alphabet_screen.jpg" width=200/>|<img src="screenshots/number_screen.jpg" width=200/>|
 |:----:|:----:|:----:|:----:|
 
-|<img src="screenshots/home_screen.jpg" width=200/>|<img src="screenshots/more_features_defalt.jpg" width=200/>|<img src="screenshots/market_screen.jpg" width=200/>|<img src="screenshots/more_features.jpg" width=200/>|
+|<img src="screenshots/kobita_screen.jpg" width=200/>|<img src="screenshots/kobita_details.jpg" width=200/>|<img src="screenshots/quiz_screen.jpg" width=200/>|<img src="screenshots/drawing_screen.jpg" width=200/>|
 |:----:|:----:|:----:|:----:|
